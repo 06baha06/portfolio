@@ -4,8 +4,8 @@ export default function About() {
     <section id="about" className="relative min-h-screen flex items-center justify-center bg-black text-white overflow-hidden py-16">
       {/* Arka planda bulanık alanlar */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-        <div className="absolute w-96 h-96 bg-purple-500/20 rounded-full blur-3xl  right-5"></div>
-        <div className="absolute w-80 h-80 bg-blue-400/15 rounded-full blur-3xl bottom-20 -left-20"></div>
+        <div className="absolute w-96 h-96 bg-purple-500/20 rounded-full blur-3xl  right-20 animate-float"></div>
+        <div className="absolute w-80 h-80 bg-blue-400/15 rounded-full blur-3xl bottom-20 -left-20 animate-float-reverse"></div>
       </div>
      <AnimatedSection>
       {/* İçerik */}

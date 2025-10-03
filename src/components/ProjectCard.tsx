@@ -1,24 +1,32 @@
 type Project = {
   title: string;
   description: string;
+  longDescription: string;
   link: string;
   technologies: string[];
+  features: string[];
+  images?: string[];
 };
 
-export default function ProjectCard({ project }: { project: Project }) {
+interface ProjectCardProps {
+  project: Project;
+  onClick: () => void;
+}
+
+export default function ProjectCard({ project, onClick }: ProjectCardProps) {
   return (
-    <div className="group relative bg-white/5 backdrop-blur-sm text-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/10 hover:border-blue-400/50">
-      {/* Başlık */}
+    <div 
+      onClick={onClick}
+      className="group relative bg-white/5 backdrop-blur-sm text-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border border-white/10 hover:border-blue-400/50 cursor-pointer"
+    >
       <h3 className="text-2xl font-bold mb-3 text-blue-400 group-hover:text-blue-300 transition-colors">
         {project.title}
       </h3>
       
-      {/* Açıklama */}
       <p className="text-gray-300 mb-4 leading-relaxed">
         {project.description}
       </p>
       
-      {/* Teknoloji Tag'leri */}
       <div className="flex flex-wrap gap-2 mb-4">
         {project.technologies.map((tech) => (
           <span
@@ -30,14 +38,8 @@ export default function ProjectCard({ project }: { project: Project }) {
         ))}
       </div>
       
-      {/* İncele Butonu */}
-      <a
-        href={project.link}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors group"
-      >
-        İncele
+      <div className="inline-flex items-center text-blue-400 hover:text-blue-300 font-semibold transition-colors group">
+        Detayları Gör
         <svg
           className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
           fill="none"
@@ -51,7 +53,7 @@ export default function ProjectCard({ project }: { project: Project }) {
             d="M9 5l7 7-7 7"
           />
         </svg>
-      </a>
+      </div>
     </div>
   );
 }
