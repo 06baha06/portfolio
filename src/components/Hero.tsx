@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail } from 'lucide-react';
 export default function Hero() {
   const [typedText, setTypedText] = useState<string>('');
   const fullText =
-    'Bilgisayar mühendisiyim. Ağırlıklı olarak front-end ve back-end geliştirme ile ilgileniyorum.';
+    'Bilgisayar mühendisliği mezunuyum. Web, mobil ve masaüstü uygulama geliştirmeye ilgi duyuyor ve yeni teknolojiler öğrenmeye meraklıyım.';
 
   useEffect(() => {
     let index = 0;
@@ -43,11 +43,13 @@ export default function Hero() {
           BAHA YILDIZ
         </h1>
 
-        {/* Açıklama (Typing) */}
-        <p className="text-base md:text-lg max-w-2xl mx-auto mb-10 text-gray-400 min-h-[3rem]">
-          {typedText}
-          <span className="animate-blink">|</span>
-        </p>
+        {/* Açıklama (Typing) - SABİT YÜKSEKLİK */}
+        <div className="h-20 md:h-16 flex items-center justify-center mb-10">
+          <p className="text-base md:text-lg max-w-2xl text-gray-400">
+            {typedText}
+            <span className="animate-blink">|</span>
+          </p>
+        </div>
 
         {/* Sosyal Medya İkonları */}
         <div className="flex gap-6 justify-center items-center mb-4">

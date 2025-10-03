@@ -1,22 +1,63 @@
 import AnimatedSection from '@/components/AnimatedSection';
+// react-icons'tan gerçek teknoloji logoları
+import { 
+  SiReact, 
+  SiNextdotjs, 
+  SiTypescript, 
+  SiTailwindcss,
+  SiHtml5,
+  SiNodedotjs,
+  SiSharp,
+  SiDotnet,
+  SiExpress,
+  SiMysql,
+  SiPostgresql,
+  SiFirebase,
+  SiMongodb,
+  SiGit,
+  SiRedux
+} from 'react-icons/si';
+import { TbBrandReactNative } from 'react-icons/tb';
+import { BiCodeAlt } from 'react-icons/bi';
 
 export default function Technologies() {
   const technologies = [
     {
       category: "Frontend",
-      items: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS", "HTML/CSS"]
+      items: [
+        { name: "React", icon: SiReact, color: "#61DAFB" },
+        { name: "Next.js", icon: SiNextdotjs, color: "#FFFFFF" },
+        { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+        { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+        { name: "HTML/CSS", icon: SiHtml5, color: "#E34F26" }
+      ]
     },
     {
       category: "Backend",
-      items: ["Node.js", "C#", ".NET Framework", "Express.js"]
+      items: [
+        { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+        { name: "Express.js", icon: SiExpress, color: "#FFFFFF" },
+        { name: "C#", icon:   SiSharp, color: "#239120" },
+        { name: ".NET Core", icon: SiDotnet, color: "#512BD4" }
+      ]
     },
     {
       category: "Database",
-      items: ["MySQL", "PostgreSQL", "Firebase"]
+      items: [
+        { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+        { name: "MySQL", icon: SiMysql, color: "#4479A1" },
+        { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+        { name: "Firebase", icon: SiFirebase, color: "#FFCA28" }
+      ]
     },
     {
-      category: "Diğer",
-      items: ["OpenGL", "Git", "React Native", "REST API"]
+      category: "Mobile & Tools",
+      items: [
+        { name: "React Native", icon: TbBrandReactNative, color: "#61DAFB" },
+        { name: "Redux", icon: SiRedux, color: "#764ABC" },
+        { name: "JWT", icon: BiCodeAlt, color: "#000000" },
+        { name: "Git", icon: SiGit, color: "#F05032" }
+      ]
     }
   ];
 
@@ -33,7 +74,7 @@ export default function Technologies() {
         <div className="relative z-10 max-w-6xl mx-auto px-6">
           <h2 className="text-4xl font-bold mb-4 text-center">Teknolojiler & Yetenekler</h2>
           <p className="text-gray-400 text-center mb-12">
-            Çalıştığım teknolojiler ve araçlar
+            Projelerimde kullandığım teknolojiler ve araçlar
           </p>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -47,18 +88,29 @@ export default function Technologies() {
                   {tech.category}
                 </h3>
 
-                {/* Teknoloji Listesi */}
-                <ul className="space-y-2">
-                  {tech.items.map((item) => (
-                    <li
-                      key={item}
-                      className="text-gray-300 text-sm flex items-center"
-                    >
-                      <span className="w-1.5 h-1.5 bg-blue-400 rounded-full mr-2"></span>
-                      {item}
-                    </li>
-                  ))}
-                </ul>
+                {/* Teknoloji Listesi - Grid Layout */}
+                <div className="grid grid-cols-2 gap-3">
+                  {tech.items.map((item) => {
+                    const Icon = item.icon;
+                    return (
+                      <div
+                        key={item.name}
+                        className="group flex flex-col items-center justify-center p-3 rounded-lg bg-white/5 hover:bg-white/10 transition-all hover:scale-105 cursor-default"
+                        title={item.name}
+                      >
+                        {/* Teknoloji İkonu */}
+                        <Icon 
+                          className="w-8 h-8 mb-2 transition-all group-hover:scale-110"
+                          style={{ color: item.color }}
+                        />
+                        {/* Teknoloji İsmi */}
+                        <span className="text-xs text-gray-300 text-center group-hover:text-white transition-colors leading-tight">
+                          {item.name}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
               </div>
             ))}
           </div>

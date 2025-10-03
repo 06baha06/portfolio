@@ -17,7 +17,7 @@ html {
 }
 
 .animate-fade-in {
-  animation: fade-in 3s ease-out;
+  animation: fade-in 7s ease-out;
 }
 
 /* Yanıp sönen cursor */

@@ -58,17 +58,23 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
 
         {/* Content */}
         <div className="p-6 space-y-6">
-          {/* Carousel */}
-          {hasImages ? (
+          {/* Carousel - Sadece resim varsa göster */}
+          {hasImages && (
             <div className="relative group">
               {/* Ana Görsel */}
               <div className="relative bg-gray-800 rounded-xl overflow-hidden aspect-video">
-                <Image
+                {images[currentImageIndex] ? (
+                  <Image
                     src={images[currentImageIndex]}
                     alt={`Proje görseli ${currentImageIndex + 1}`}
                     fill
                     className="object-contain"
-                    />
+                  />
+                ) : (
+                  <div className="w-full h-full flex items-center justify-center text-gray-500">
+                    Görsel yükleniyor...
+                  </div>
+                )}
 
                 {/* Sol Ok */}
                 {images.length > 1 && (
@@ -115,11 +121,6 @@ export default function ProjectModal({ project, onClose }: ProjectModalProps) {
                   ))}
                 </div>
               )}
-            </div>
-          ) : (
-            // Görsel yoksa placeholder
-            <div className="bg-gray-800 rounded-xl h-64 flex items-center justify-center">
-              <p className="text-gray-500">Proje Görseli</p>
             </div>
           )}
 

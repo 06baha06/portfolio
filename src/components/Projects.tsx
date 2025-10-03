@@ -7,6 +7,26 @@ import AnimatedSection from './AnimatedSection';
 
 const projects = [
   {
+    title: "Kişisel Portfolio Sitesi",
+    description: "Next.js 15 ve TypeScript ile geliştirdiğim modern, responsive portfolio sitesi. Projelerimi, yeteneklerimi ve iletişim bilgilerimi sergiliyor.",
+    longDescription: "Kendimi tanıtmak ve projelerimi sergilemek için sıfırdan tasarlayıp geliştirdiğim kişisel portfolio sitesi. Modern web teknolojileri ve best practice'leri kullanarak hızlı, SEO-friendly ve görsel olarak etkileyici bir deneyim sunmayı hedefledim. Glassmorphism efektler, gradient animasyonlar ve smooth scroll ile kullanıcı deneyimini ön planda tutarak geliştirdim.",
+    link: "https://github.com/06baha06/portfolio",
+    technologies: ["Next.js ", "React ", "TypeScript", "Tailwind CSS", "Framer Motion", "EmailJS", "Lucide Icons"],
+    features: [
+      "Server-side rendering ve static generation ile hızlı sayfa yükleme",
+      "Modern glassmorphism ve gradient tasarım dili",
+      "Framer Motion ile smooth scroll animasyonları",
+      "Responsive tasarım - tüm cihazlarda mükemmel görünüm",
+      "EmailJS entegrasyonu ile çalışan iletişim formu",
+      "Dinamik proje showcase sistemi (modal detayları, carousel)",
+      "CV indirme özelliği",
+      "SEO optimize (sitemap, metadata, robots.txt)",
+      "TypeScript ile type-safe geliştirme",
+      "Scroll to top butonu ve smooth navigation",
+    ],
+    images: []
+  },
+  {
     title: "OPTURK",
     description: "Optik form tasarlama ve okuma için React + Node.js tabanlı web uygulaması.",
     longDescription: "Eğitim kurumları ve sınav merkezleri için geliştirilmiş, optik formların sıfırdan tasarlanmasını, yazdırılmasını ve otomatik okunmasını sağlayan web tabanlı platform. Kullanıcılar kendi optik form şablonlarını oluşturabilir, öğrenci cevaplarını tarayarak sisteme yükleyebilir ve sonuçları otomatik olarak analiz edebilir.",
