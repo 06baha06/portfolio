@@ -81,6 +81,7 @@ export default function RootLayout({
   return (
     <html lang="tr">
       <head>
+        <meta name="google-site-verification" content="gHRte1o-dJ_93namBH2KCEYZbum5Q5FfkJaNIOI97VY" />
         <StructuredData />
       </head>
       <body
