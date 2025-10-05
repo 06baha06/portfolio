@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://bahayildiz.com'),
+  metadataBase: new URL('https://portfolio-psi-ten-1zdu3723yk.vercel.app'),
   title: {
     default: "Baha Yıldız | Computer Engineer & Frontend Developer",
     template: "%s | Baha Yıldız"
@@ -32,16 +32,16 @@ export const metadata: Metadata = {
     "Full Stack Developer",
     "JavaScript Developer"
   ],
-  authors: [{ name: "Baha Yıldız", url: "https://bahayildiz.com" }],
+  authors: [{ name: "Baha Yıldız", url: "https://portfolio-psi-ten-1zdu3723yk.vercel.app" }],
   creator: "Baha Yıldız",
   publisher: "Baha Yıldız",
   alternates: {
-    canonical: 'https://bahayildiz.com',
+    canonical: 'https://portfolio-psi-ten-1zdu3723yk.vercel.app',
   },
   openGraph: {
     type: "website",
     locale: "tr_TR",
-    url: "https://bahayildiz.com",
+    url: "https://portfolio-psi-ten-1zdu3723yk.vercel.app",
     title: "Baha Yıldız | Frontend Developer",
     description: "Bilgisayar mühendisi ve frontend developer. React, TypeScript ve modern web teknolojileri ile çalışıyorum.",
     siteName: "Baha Yıldız Portfolio",

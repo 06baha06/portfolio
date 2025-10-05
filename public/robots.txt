@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bahayildiz.com/sitemap.xml
+Sitemap: https://portfolio-psi-ten-1zdu3723yk.vercel.app/sitemap.xml

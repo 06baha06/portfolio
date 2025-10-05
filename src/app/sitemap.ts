@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://bahayildiz.com'; // ← Kendi domain'ini yaz
+  const baseUrl = 'https://portfolio-psi-ten-1zdu3723yk.vercel.app'; 
 
   return [
     {
