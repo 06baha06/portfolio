@@ -16,19 +16,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL('https://portfolio-psi-ten-1zdu3723yk.vercel.app'),
   title: {
-    default: "Baha Yıldız | Computer Engineer & Frontend Developer",
+    default: "Baha Yıldız | Bilgisayar Mühendisi & Yazılım Geliştirici",
     template: "%s | Baha Yıldız"
   },
-  description: "Bilgisayar mühendisi ve frontend developer. React, TypeScript, C# ve .NET ile modern web uygulamaları geliştiriyorum. Portfolio ve projelerim.",
+  description: "Bilgisayar mühendisi ve yazılım geliştirici. React, TypeScript, C# ve .NET ile modern web uygulamaları geliştiriyorum. Portfolio ve projelerim.",
   keywords: [
     "Baha Yıldız",
-    "Frontend Developer",
+    "Bilgisayar Mühendisi",
+    "Yazılım Geliştirici",
+    "Software Engineer",
+    "Software Developer",
     "React Developer", 
     "TypeScript",
     "Next.js Developer",
     "Web Developer",
-    "Software Engineer",
-    "Bilgisayar Mühendisi",
     "Full Stack Developer",
     "JavaScript Developer"
   ],
@@ -42,22 +43,22 @@ export const metadata: Metadata = {
     type: "website",
     locale: "tr_TR",
     url: "https://portfolio-psi-ten-1zdu3723yk.vercel.app",
-    title: "Baha Yıldız | Frontend Developer",
-    description: "Bilgisayar mühendisi ve frontend developer. React, TypeScript ve modern web teknolojileri ile çalışıyorum.",
+    title: "Baha Yıldız | Yazılım Geliştirici",
+    description: "Bilgisayar mühendisi ve yazılım geliştirici. React, TypeScript ve modern web teknolojileri ile çalışıyorum.",
     siteName: "Baha Yıldız Portfolio",
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Baha Yıldız - Frontend Developer Portfolio',
+        alt: 'Baha Yıldız - Yazılım Geliştirici Portfolio',
       }
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Baha Yıldız | Frontend Developer",
-    description: "Bilgisayar mühendisi ve frontend developer. React, TypeScript ve modern web teknolojileri.",
+    title: "Baha Yıldız | Yazılım Geliştirici",
+    description: "Bilgisayar mühendisi ve yazılım geliştirici. React, TypeScript ve modern web teknolojileri.",
     images: ['/og-image.png'],
   },
   robots: {

@@ -17,7 +17,7 @@ export default function About() {
           <div className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 hover:border-blue-400/50 transition-all">
             <p className="text-lg text-gray-300 leading-relaxed mb-6">
               Merhaba! Ben <span className="text-blue-400 font-semibold">Baha Yıldız</span>. 
-              Bilgisayar Mühendisliği mezunuyum ve frontend geliştirmeye özellikle ilgi duyuyorum.
+              Bilgisayar Mühendisliği mezunuyum ve yazılım geliştirme alanında özellikle web teknolojilerine ilgi duyuyorum.
               Modern ve işlevsel kullanıcı arayüzleri oluşturmayı seviyorum.
             </p>
             
